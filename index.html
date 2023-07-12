@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomofocus</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="timer__menu">
+            <button class="btn__pomodor" onclick="app.pomodor()">Помодор</button>
+            <button class="btn__short" onclick="app.short()">Короткий перерыв</button>
+            <button class="btn__long" onclick="app.long()">Длинный перерыв</button>
+            <button onclick="(onModal())">Настройки</button>
+        </div>
+        <div class="timer__watch">
+            <div class="num" id="min_tens">0</div>
+            <div class="num" id="min">0</div>
+            <div class="dots">:</div>
+            <div class="num" id="sec_tens">0</div>
+            <div class="num" id="sec">0</div>
+        </div>
+        <div class="timer__btn">
+            <button class="btn" onclick="app.start(event)">Начать</button>
+            <button class="btn" onclick="app.pause()">Пауза</button>
+            <button class="btn" onclick="app.restart()">Перезапустить</button>
+        </div>
+        <div class="tikets">
+            <div class="app">
+                <h1>ЗАДАЧИ</h1>
+                <form>
+                  <input type="text" placeholder="Добавить новую задачу...">
+                  <button type="submit">+</button>
+                </form>
+                <ul></ul>
+            </div>
+        </div>
+        <div class="setting" >
+            
+            <div class="setting__modal-form" id="setting">
+                <form class="setting__form"  onsubmit="app.submit(event)" >
+                    <label> Количество помодоро
+                        <input type="number" name="pomod" id="pomod " value="25">
+                    </label>
+                    <label> Время короткого перерыва
+                        <input type="number" name="short" id="short" value="5">
+                    </label>
+                    <label> Время длинного перерыва
+                        <input type="number" name="long" id="long" value="15">
+                    </label>
+                    <div class="setting__btn">
+                        <button type="submit" onclick="(offModal())">Сохранить изминения</button>
+                        <button onclick="(offModal())">Выйти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="setting__modal"  id="setting__modal" onclick="(offModal())"></div>
+        </div>
+    </main>
+</body>
+</html>

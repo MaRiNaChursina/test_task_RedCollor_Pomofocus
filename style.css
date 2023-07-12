@@ -1,0 +1,238 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Noto+Sans:ital@0;1&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  
+}
+
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none; list-style-type: none; }
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+body{
+
+  display: flex;
+  justify-content: center;
+  background-color: #1A1A1D ;
+}
+main{
+  margin-top: 10px;
+}
+
+button{
+  cursor: pointer;
+  color: #fff;
+  background: #6F2232 ;
+  width: 100px;
+  height: 30px;
+  border-radius: 30%/100%;
+  letter-spacing: 2px;
+}
+
+.timer__menu,
+.timer__btn{
+  margin: 20px 0px;
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__short,
+.btn__long {
+  width: 150px;
+}
+
+.timer__watch{
+  display: flex;
+  justify-content: space-between;
+  font-size: 200px;
+  width: 520px;
+  color: #950740;
+}
+
+.num{
+  background-color: #4e4e5044 ;
+}
+
+.dots{
+  margin-top: -20px;
+}
+
+.btn{
+  width: 150px;
+}
+
+.setting__form{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bad Script';
+}
+
+.setting__form label{
+  margin: 10px 0px;
+  padding-left: 5px;
+}
+
+.setting__btn{
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.setting__btn button{
+  width: 220px;
+  height: 50px;
+  font-family: 'Bad Script';
+  letter-spacing: 4px;
+}
+
+.setting__modal-form{
+  position: absolute;
+  top:200px;
+  z-index: 100;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  background-color: #4E4E50;
+  color: #C3073F;
+  display:none;
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-shadow: .2em 0 #6F2232;
+}
+
+.setting__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: .3s all;
+  display:none;
+}
+
+.setting__form input{
+  height: 60px;
+  width: 60px;
+  background-color:#4E4E50;
+  color: #c3073f;
+  text-shadow: .2em 0 #6F2232;
+  font-size: 32px;
+  font-family: 'Bad Script';
+  border-bottom: 1px solid #6F2232;
+}
+
+.app {
+  margin-top: 50px;
+  width: 100%;
+}
+
+
+
+.app h1 {
+  color: white;
+  font-size: 40px;
+  padding: 20px 0;
+  text-align: center;
+  letter-spacing: 70px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.app form {
+  display: flex;
+  width: 100%;
+}
+
+.app form input {
+  border: none;
+  background-color: #C3073F ;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 80%;
+}
+
+input::placeholder {color: #f3a9a9;}
+
+.app form button {
+  border: none;
+  color: white;
+  background-color: #4E4E50 ;
+  font-size: 25px;
+  font-weight: 600;
+  height: 42px;
+  width: 10%;
+  border-radius: 0%;
+}
+
+.app ul {
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+
+.app ul li {
+  width: 520px;
+  padding: 10px;
+  background-color: #6F2232 ;
+  border-bottom: 5px solid #4b1721 ;
+}
+
+.check:checked {
+  background-color: #1dd2af;
+}
+
+.task {
+  font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.fa {
+  float: right;
+  cursor: pointer;
+  width: 20px;
+  fill: rgb(255, 255, 255);
+}
+
+.fa-trash:hover {
+  fill: rgb(255, 82, 82);
+  
+}
+
+.completed {
+  color: rgba(192, 192, 192, 0.8);
+  text-decoration: line-through;
+}
